@@ -1,0 +1,21 @@
+<head>
+  <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+  <div class="poem">
+  <p>
+  {% for line in lines %}
+  {{line}}
+  <br>
+  {% endfor %}
+  </p>
+  </div>
+  <div class="actions">
+    <form action="{{url_for('gen_poem')}}">
+      <input type="submit" value="Get new poem"/>
+    </form>
+    <form action="{{url_for('search_form')}}">
+      <input type="submit" value="Another news search"/>
+    </form>
+  </div>
+</body>

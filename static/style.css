@@ -1,0 +1,49 @@
+body{
+  font-family: adobe-garamond-pro,Garamond,Baskerville,Baskerville Old Face,Hoefler Text,Times New Roman,serif;
+  line-height: 1.7;
+  font-size: 1.2rem;
+}
+
+h1{
+font-size: 3rem;
+}
+
+p{
+font-size: 1.2rem;
+}
+
+div.poem{
+  margin: 20%;
+}
+
+.actions {
+  display: flex;
+  direction: row;
+  justify-content: flex-end;
+  gap: 1%;
+}
+
+.search-news {
+  align-items:center;
+  display: flex;
+  direction: row;
+  justify-content: center;
+  gap: 5%
+}
+
+#search-query{
+  flex-grow:2;
+  flex-basis:30%
+}
+
+input[type=submit]{
+  border: 1px solid #000;
+  border-radius: 5px;
+  box-shadow: none;
+  background: none;
+  padding: 10px;
+}
+
+#secret {
+  color: white;
+}

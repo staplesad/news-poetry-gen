@@ -1,0 +1,12 @@
+<head>
+  <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+  <h1>Generate a poem from current news headlines.</h1>
+  <form action="{{url_for('get_headlines')}}" method="post" class="search-news">
+      <label for="search-query">news search query: </label>
+      <input type="text" id="search-query" name="search-query" value="{{ query if query is not none}}" required></input>
+      <input type="submit" value="Generate!">
+  </form>
+  <div id="secret">Happy Birthday Jack!</div>
+</body>
